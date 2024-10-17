@@ -1,0 +1,46 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Flyswatter";
+}
+
+<div class="max-height">
+    <div class="playing-field" class="max-height">
+        <div class="title-screen max-height">
+            <center>
+                <img class="responsive-image" src="Resources/title1.png" />
+            </center>
+            <div id="bugs-div">
+                <div id="border-top-left-bottom" class="bug-and-point">
+                    <div class="big-bug">
+                        <img class="img-as-big-as-div" src="Resources/flydrawn.png" />
+                    </div>
+                    <div class="point-text">
+                        <p>+3 pont</p>
+                    </div>
+                </div>
+                <div id="border-top-bottom" class="bug-and-point">
+                    <div class="big-bug">
+                        <img class="img-as-big-as-div" src="Resources/ladybugdrawn.png" />
+                    </div>
+                    <div class="point-text">
+                        <p>-3 pont</p>
+                    </div>
+                </div>
+                <div id="border-top-right-bottom" class="bug-and-point">
+                    <div class="big-bug">
+                        <img class="img-as-big-as-div" src="Resources/goldenflydrawn.png" />
+                    </div>
+                    <div class="point-text">
+                        <p>+10 pont</p>
+                    </div>
+                </div>
+            </div>
+            <center>
+                <div id="start-button-div">
+                    <a id="start-button" asp-area="" asp-page="/Game">Kezdés</a>
+                </div>
+            </center>
+        </div>
+    </div>
+</div>

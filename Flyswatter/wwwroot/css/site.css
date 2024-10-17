@@ -1,0 +1,164 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    font-family: sansSerif;
+}
+
+.max-height {
+    min-height: 100vh;
+}
+
+#playing-field {
+    width: 100vh;
+    height: 100vh;
+    min-height: 100%;
+    margin: 0 auto;
+    border: solid 0.3vw black;
+}
+
+.tile-background {
+    background-image: url(../Resources/tiles.jpg);
+    overflow: hidden;
+}
+
+.responsive-image {
+    width: 50%;
+}
+
+.fly-image {
+    position: absolute;
+    height: 6vh;
+}
+
+.stats {
+    background-color: white;
+    border: solid 0.3vh black;
+}
+
+#field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#score {
+    font-size: 5vh;
+}
+
+#timer {
+    position: absolute;
+    left: 50%;
+    font-size: 5vh;
+}
+
+#start-button {
+    font-size: 3vh;
+    border: 0.3vh solid black;
+}
+
+a:link {
+    color: black;
+    text-decoration: none !important;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none !important;
+}
+
+.button {
+    font-size: 3vh;
+    border: 0.3vh solid black;
+}
+
+.bug-and-point {
+    width: 11vh;
+    background-color: white;
+}
+
+.big-bug {
+    height: 10vh;
+}
+
+.point-text {
+    font-size: 2vh;
+    text-align: center;
+}
+
+#fly-background {
+    background-image: url(../Resources/flydrawn.png);
+}
+
+#ladybug-background {
+    background-image: url(../Resources/ladybugdrawn.png);
+}
+
+#goldenfly-background {
+    background-image: url(../Resources/goldenflydrawn.png);
+}
+
+.img-as-big-as-div {
+    width: 100%;
+    height: 100%;
+}
+
+#bugs-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 15vh;
+}
+
+#border-top-left-bottom {
+    border-top: 0.3vh solid black;
+    border-left: 0.3vh solid black;
+    border-bottom: 0.3vh solid black;
+}
+
+#border-top-bottom {
+    border-top: 0.3vh solid black;
+    border-bottom: 0.3vh solid black;
+}
+
+#border-top-right-bottom {
+    border-top: 0.3vh solid black;
+    border-right: 0.3vh solid black;
+    border-bottom: 0.3vh solid black;
+}
+
+#start-button-div {
+    width: fit-content;
+    background-color: white;
+    margin-top: 5vh;
+}
+
+#result-screen {
+    text-align: center;
+    height: 40vh;
+    width: 50vh;
+    background-color: white;
+    border: solid 0.3vh black;
+}
+
+.five-size {
+    font-size: 5vh;
+}
+
+#result-screen-points {
+    font-size: 4vh;
+}
+
+@font-face {
+    font-family: sansSerif;
+    src: url(../Resources/sans-serif.ttf);
+}
