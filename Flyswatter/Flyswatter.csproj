@@ -11,10 +11,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\Resources\fly.jpg" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="6.0.16" />
   </ItemGroup>
 
