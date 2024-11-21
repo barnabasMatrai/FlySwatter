@@ -52,7 +52,13 @@ function removeImages() {
 }
 
 function increaseScore(image, amount) {
-    image.remove();
+    if (amount < 0) {
+        image.src = image.src.replace("targetAvoid", "sad");
+    }
+    else {
+        image.remove();
+    }
+
     let scoreTag = document.getElementById("score");
     let scoreSplit = scoreTag.innerText.split(' ');
     let newScore = parseInt(scoreSplit[1]) + amount;

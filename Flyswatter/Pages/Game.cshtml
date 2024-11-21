@@ -1,12 +1,19 @@
 ﻿@page
 @model Flyswatter.Pages.GameModel
 @{
-    ViewData["Title"] = "Flyswatter";
+    ViewData["Title"] = GameConfiguration.Title;
+    ViewData["Edition"] = GameConfiguration.Edition;
 }
 
-<img id="flyImg" class="fly-image" src="Resources/flydrawn.png" onclick="increaseScore(this, 3)" hidden />
-<img id="ladybugImg" class="fly-image" src="Resources/ladybugdrawn.png" onclick="increaseScore(this, -3)" hidden />
-<img id="goldenFlyImg" class="fly-image" src="Resources/goldenflydrawn.png" onclick="increaseScore(this, 10)" hidden />
+<img id="flyImg" class="fly-image" src="Resources/@{
+                        @ViewData["Edition"]
+}-edition/targetNormal.png" onclick="increaseScore(this, 3)" hidden />
+<img id="ladybugImg" class="fly-image" src="Resources/@{
+                        @ViewData["Edition"]
+}-edition/targetAvoid.png" onclick="increaseScore(this, -3)" hidden />
+<img id="goldenFlyImg" class="fly-image" src="Resources/@{
+                        @ViewData["Edition"]
+}-edition/targetExtra.png" onclick="increaseScore(this, 10)" hidden />
 <div class="stats">
     <span id="score">Pontszám: 0</span>
     <span id="timer">60</span>

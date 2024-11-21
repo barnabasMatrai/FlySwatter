@@ -1,11 +1,11 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 html {
@@ -24,11 +24,6 @@ html {
     min-height: 100%;
     margin: 0 auto;
     border: solid 0.3vw black;
-}
-
-.tile-background {
-    background-image: url(../Resources/tiles.jpg);
-    overflow: hidden;
 }
 
 .responsive-image {
@@ -162,6 +157,20 @@ a:visited {
     font-family: sansSerif;
     src: url(../Resources/sans-serif.ttf);
 }
+
+#edition-selector {
+    width: 15vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-right: 0.3vh solid black;
+    border-top: 0.3vh solid black;
+    border-left: 0.3vh solid black;
+    border-bottom: 0.3vh solid black;
+}
+
 * { /* disable text selection*/
     -webkit-touch-callout: none;
     -webkit-user-select: none;

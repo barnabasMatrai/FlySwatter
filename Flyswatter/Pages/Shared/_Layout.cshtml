@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@{
+    var edition = GameConfiguration.Edition;
+}
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -6,6 +10,9 @@
     <title>@ViewData["Title"] - Flyswatter</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/@{
+    @edition
+}-edition.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Flyswatter.styles.css" asp-append-version="true" />
 </head>
 <body class="tile-background max-height">
