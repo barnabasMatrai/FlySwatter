@@ -52,8 +52,14 @@ function removeImages() {
 }
 
 function increaseScore(image, amount) {
-    if (amount < 0) {
-        image.src = image.src.replace("targetAvoid", "sad");
+    if (image.src.includes("Hit")) {
+        amount = 0;
+    }
+    else if (amount < 0) {
+        image.src = image.src.replace("targetAvoid", "targetAvoidHit");
+    }
+    else if (amount === 10) {
+        image.src = image.src.replace("targetExtra", "targetExtraHit");
     }
     else {
         image.remove();
