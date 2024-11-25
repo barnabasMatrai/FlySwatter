@@ -46,3 +46,8 @@ If you hit the extra target, the Krampus, it will turn into an elf.
 ## Switch between Winter and Summer mode
 
 Change the value of AppSettings.Edition in appsettings.json to either "summer" or "winter"
+
+## Contributors
+matraiBarnabas - author
+ignotus87 / Takács Zsolt - Winter edition
+Szekely Ferencz - images for Winter edition
